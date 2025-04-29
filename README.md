@@ -1,29 +1,73 @@
-# Power BI Sales Dashboard
+# Retail Sales Performance Dashboard – Contoso Retail 📊
 
-## Overview
-This Power BI Sales Dashboard is designed to provide a comprehensive overview of our company's sales data for the last year.
+This project simulates a real-world engagement with **Contoso Retail**, a global electronics retailer. I was brought on as a data analyst to develop a dynamic reporting solution in Power BI to support executive decision-making.
 
-## Features
-- Visualizations of sales data, including revenue, quantity sold, and profit margins.
-- Drill-down capabilities for deeper data exploration by category and channel.
-- Product performance analysis with top-selling products.
-- Time-based filters.
+Using the **ContosoRetailDW** data warehouse (sample data), I built a complete BI solution from data modeling to final dashboard delivery.
 
-## Sample Image
-![Preview Image](https://github.com/SeolheeKim7/ContosoRetail_PowerBi/blob/main/powerBI.png)
+---
 
-more images ...
-https://github.com/SeolheeKim7/ContosoRetail_PowerBi/blob/main/contosoRetail_SeolheeKim.pdf
+## Project Brief
 
-## Demo
-https://app.powerbi.com/links/d86OuIgP76?ctid=84c31ca0-ac3b-4eae-ad11-519d80233e6f&pbi_source=linkShare
+Contoso’s leadership needed a clear, data-driven view of retail performance across years, channels, and product lines. They wanted a system that could answer:
 
-## Installation
-1. You'll need [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) installed on your machine.
-2. Download the latest version of the Power BI Sales Dashboard from [GitHub releases](link-to-release).
-3. Open the downloaded .pbix file using Power BI Desktop.
-4. If you want to connect your own data sources, follow the instructions provided in the dashboard.
+- Which products are the most and least profitable?
+- Which sales channels drive the highest returns?
+- Which product and channel combinations should be prioritized?
+- How have sales and profits trended across time?
 
-## Data Sources
-Contoso Retail Data Warehouse Database
-https://www.microsoft.com/en-ca/download/details.aspx?id=18279
+I proposed, designed, and delivered a Power BI dashboard with a strong semantic model that allowed for slicing, drill-down, and exploratory analysis — all built on top of a structured SQL data warehouse.
+
+---
+
+## Tools & Technologies
+
+- SQL Server (ContosoRetailDW)
+- Power BI Desktop
+- DAX, Power Query (M)
+- Star Schema Data Modeling
+- Visual & Analytical Reporting
+
+---
+
+## Data Model
+
+The Power BI model follows a **clean star schema**. I performed schema review and designed relationships for scalable performance.
+
+- Central Fact Table: `FactSales`
+- Dimension Tables:
+  - `DimProduct`
+  - `DimDate`
+  - `DimPromotion`
+  - `DimCurrency`
+  - `DimChannel`
+  - `DimStore`
+
+![Star Schema](./images/SalesStarSchema_Conteso.png)
+
+---
+
+## Executive Dashboard Overview
+
+The final dashboard allows executives to:
+- Compare **profitability over time** (by year, quarter, month)
+- Identify **top/bottom products** by quantity and revenue
+- Explore **channel profitability**
+- Interact with filters and dynamic slicers
+
+![Dashboard Screenshot](./images/powerBI.png)
+
+---
+
+## Strategic Insights & Recommendations
+
+Based on the analysis, I presented the following key takeaways to stakeholders:
+
+- **Online and Catalog channels** drive over 70% of profit — continued investment is recommended.
+- High-margin products like **Proseware projectors** should be promoted further.
+- Several SKUs with consistent low sales and low margins are candidates for **discontinuation**.
+- Seasonal profit patterns suggest a need for improved **inventory forecasting** and **marketing alignment** during Q2 and Q4.
+
+---
+
+## Project Structure
+
