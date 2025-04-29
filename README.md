@@ -54,7 +54,7 @@ The final dashboard allows executives to:
 - Explore **channel profitability**
 - Interact with filters and dynamic slicers
 
-![Dashboard Screenshot](./images/powerBI.png)
+![Dashboard Screenshot](./images/overview.png)
 
 ---
 
