@@ -69,5 +69,3 @@ Based on the analysis, I presented the following key takeaways to stakeholders:
 
 ---
 
-## Project Structure
-
