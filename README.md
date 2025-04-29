@@ -1,4 +1,4 @@
-# Retail Sales Performance Dashboard – Contoso Retail 📊
+# Retail Sales Performance Dashboard – Contoso Retail
 
 This project simulates a real-world engagement with **Contoso Retail**, a global electronics retailer. I was brought on as a data analyst to develop a dynamic reporting solution in Power BI to support executive decision-making.
 
